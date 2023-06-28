@@ -34,8 +34,8 @@
 
                 <a class="title" href="#">Introduction</a>
                 
-                <a class="section" href="#">Supported Versions</a>
-                <a class="section" href="#">About this App</a>
+                <!-- <a class="section" href="#">Supported Versions</a> -->
+                <a class="section" href="#aboutapp">About this App</a>
                 <a class="section" href="#technology">Technology</a>
 
                 <div class="divider left"></div>
@@ -82,27 +82,64 @@
             
 
 
-                <h1 >Introduction</h1>
+                <h1>Introduction</h1>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                <p>
+                Biochain-AI is a projects that aims to create a blockchain system
+                that allows a consortium of organizations to manage biological data in a secure way.
+                The system allows to upload data into the system and make it available for sharing
+                requests from all the others organizations. It also allows to store the 
+                secret information about the data into a private collection in order to 
+                keep the data secure until requested.
+                Every action performed on the system 
+                is securely stored into the blockchain which tracks every action of every organization.
+                </p> 
             
-                <h2>Supported Versions:</h2>
+                <!-- <h2>Supported Versions:</h2>
              
-                <p><b>App Version 1.0.0.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><b>App Version 1.0.0.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
 
                 <h2>About this App</h2>
                 
-                <p id="technology"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p id="aboutapp">
+                    The system is compose by three main sections:
+                    <ul>
+                        <li>The Blockchain</li>
+                        <li>The Rest Api Server</li>
+                        <li>The Web Server</li>
+                    </ul>
+                    <br>
+                    The blockchain system is a series of elements that talk to 
+                    eachother. It's the core of the project. It runs the chaincodes
+                    that allows to store data and the transations securely inside the ledger.
+                    <br>
+                    Every organization that wants to join the consortium must create its own
+                    "server" that communicate to all the others organzations. Inside it are stored
+                    the secret biological data that the organization makes available to the others
+                    organizations in the consortium.
+                    <br>
+                    <br>
+                    The Web Server allows to have a web inferface to communicate with the 
+                    blockchain. It is a private interface that needs authentication to be visible.
+                    <br>
+                    <br>
+                    The Rest Api Server is the system that allows to connect the blockchain with 
+                    the web application. It gives a Rest interface to the web server to send all the available 
+                    requests. This Golang server call the correct chaincode method into the blockchain 
+                    passing the necessary information.
+                </p>
 
                 <h2>Technology</h2>
                 
-                <p>This app is built with Javascript, HTML and CSS.<br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p id="technology">The system is developed using different technologies.
+                <br>
+                The blockchain system is develop using the IBM framework called Hyperledger Fabric.
+                The custom chaincodes used are written using the Golang programming language.
+                The Rest server is written using the Golang programming language.
+                The Web server is written in PHP.
+                </p>
 
-                <p id="gettingstarted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p> 
+                <!-- <p id="gettingstarted"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p> 
                  
         <div class="divider" style="width:24%; margin:30px 0;"></div>
 
@@ -323,7 +360,7 @@
 
                 <div class="doublespace"></div>
                 <div class="divider" style="width:24%; margin:30px 0;"></div>
-                
+                 -->
 
             </div>
 
